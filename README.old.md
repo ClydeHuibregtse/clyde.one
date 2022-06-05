@@ -1,2 +1,0 @@
-# clyde.one
-Personal Website
