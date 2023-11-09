@@ -1,0 +1,8 @@
+[
+    {
+        "projectName": "Letter Box",
+        "imagePath" : "/src/lib/assets/letter-boxed-card-icon.svg",
+        "description": "A little bot to fight 2014's hottest NYT crossword puzzle app mini-game, <a href='https://www.nytimes.com/puzzles/letter-boxed'>Letter Boxed</a>. If you're curious how intensely I can fixate on such a stupid game, read on.",
+        "projectURL": "https://google.com"
+    }
+]
