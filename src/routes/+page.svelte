@@ -1,6 +1,6 @@
 <script lang="ts">
     import ProjectContainer from "../components/project_container.svelte";
-    import smileyImg from "$lib/assets/smiley logo.png";
+    import smileyImg from "$lib/assets/smiley_logo.png";
 </script>
 
 
@@ -50,9 +50,5 @@
         display: block;
         height: 100;
     }
-    #projects {
-
-    }
-
 
 </style>
