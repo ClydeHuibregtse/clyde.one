@@ -36,7 +36,8 @@
         padding: 10px; /* Add some padding for spacing */
         border-radius: 10px; /* Rounded corners */
         overflow-y: scroll;
-        max-height: 300px;
+        max-height: 400px;
+        width: 100%;
     }
 </style>
 

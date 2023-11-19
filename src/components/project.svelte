@@ -46,7 +46,7 @@
         display: flex;
         flex-direction: column;
         transition: transform 0.2s;
-        width: 300px;
+        width: 100%;
     }
     
     .project:hover {
