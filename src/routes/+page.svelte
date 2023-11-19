@@ -1,8 +1,13 @@
 <script lang="ts">
     import ProjectContainer from "../components/project_container.svelte";
     import smileyImg from "$lib/assets/smiley_logo.png";
+
 </script>
 
+<svelte:head>
+	<title>clyde.one</title>
+	<html lang="en" />
+</svelte:head>
 
 <div id="main">
     <div id="main-container">
