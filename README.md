@@ -1,38 +1,23 @@
-# create-svelte
+# clyde.one
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+See www.clyde.one
 
-## Creating a project
+## Developer Notes
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Setup on Ubuntu host
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Ensure the following are installed:
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+. `docker` (with `docker compose`)
 
-## Developing
+Do the following:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+. Clone this repo to `/opt/clyde.one`
 
-```bash
-npm run dev
+. Configure Caddy server
+.. `cp /opt/clyde.one/caddy/Caddyfile /etc/caddy/Caddyfile`
+.. `sudo systemctl restart caddy`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+. Start clyde.one site server
+.. `cd /opt/clyde.one/site`
+.. `docker compose up --build -d`

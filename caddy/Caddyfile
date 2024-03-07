@@ -1,0 +1,22 @@
+# clyde.one Caddy Server
+# This server enables a reverse proxy to various applications
+# that may or may not be running on this host
+# 
+
+# Reminder: copy this file to /etc/caddy/Caddyfile on the host
+(landing) {
+
+    # Reverse proxy to hit the local server serving
+    # the Svelte site
+    reverse_proxy localhost:9000
+}
+
+clyde.one {
+    import landing
+}
+www.clyde.one {
+    import landing
+}
+
+# Refer to the Caddy docs for more information:
+# https://caddyserver.com/docs/caddyfile
