@@ -18,5 +18,9 @@ www.clyde.one {
     import landing
 }
 
+letter-boxed.clyde.one {
+    reverse_proxy ec2-34-205-142-225.compute-1.amazonaws.com:3001
+}
+
 # Refer to the Caddy docs for more information:
 # https://caddyserver.com/docs/caddyfile
