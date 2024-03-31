@@ -1,14 +1,13 @@
 # clyde.one Caddy Server
 # This server enables a reverse proxy to various applications
 # that may or may not be running on this host
-# 
 
 # Reminder: copy this file to /etc/caddy/Caddyfile on the host
 (landing) {
 
     # Reverse proxy to hit the local server serving
     # the Svelte site
-    reverse_proxy localhost:9000
+    reverse_proxy clyde.one:9000
 }
 
 clyde.one {
@@ -19,7 +18,7 @@ www.clyde.one {
 }
 
 letter-boxed.clyde.one {
-    reverse_proxy ec2-34-205-142-225.compute-1.amazonaws.com:3001
+    reverse_proxy https://ec2-34-205-142-225.compute-1.amazonaws.com
 }
 
 # Refer to the Caddy docs for more information:

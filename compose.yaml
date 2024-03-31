@@ -1,0 +1,14 @@
+services:
+
+  caddy:
+    image: caddy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
+
+  clyde.one:
+    build: ./site/
+    ports:
+      - "9000:9000"
